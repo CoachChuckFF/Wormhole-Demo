@@ -1,0 +1,17 @@
+[features]
+seeds = true
+
+[programs.localnet]
+cross_counter = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+cross_counter2 = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnq"
+mock_wormhole = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnf"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "FRANKC3ibsaBW1o2qRuu3kspyaV4gHBuUfZ5uq9SXsqa.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
